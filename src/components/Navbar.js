@@ -18,6 +18,7 @@ const Navbar = () => {
               <a href="#" className="flex items-center py-4 px-8   " >
                 <img src="https://assets-global.website-files.com/63da3362f67ed6f71c9489c1/654464899059fee2e293fe76_logo_Deepbrainai-shot.svg" alt="Logo" className="h-[32px] w-[182px] ml-1" />
                 {/* <span className="font-semibold text-gray-500 text-lg">Navbar</span> */}
+                {/* add comment dfor pushing pirpose  */}
               </a>
             </div>
             {/* Primary Navbar items */}
