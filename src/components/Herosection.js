@@ -2,7 +2,7 @@ import React from 'react';
 
 const Homesection = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-300 via-blue-400 to-blue-200 p-24">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-300 via-blue-300 to-blue-200 p-24">
       {/* Text container */}
       <div className="flex-1 p-6">
         <h1 className="text-4xl font-bold text-white mb-4">
