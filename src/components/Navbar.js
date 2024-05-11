@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Darkmode from './Darkmode';
+import logo from './images/logo.png';    
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +18,8 @@ const Navbar = () => {
           <div className="flex space-x-8  ">
             <div  className='pr-10' >
               {/* Website Logo */}
-              <a href="#" className="flex items-center py-4 px-8   " >
-                <img src="https://assets-global.website-files.com/63da3362f67ed6f71c9489c1/654464899059fee2e293fe76_logo_Deepbrainai-shot.svg" alt="Logo" className="h-[32px] w-[182px] ml-1" />
+              <a href="#" className="flex items-center py-6 px-8   " >
+                <img src={require("./images/logo.png")} alt="Logo" className="h-[46px] w-[160px] ml-1" />
                 {/* <span className="font-semibold text-gray-500 text-lg">Navbar</span> */}
                 {/* add comment dfor pushing pirpose  */}
               </a>
@@ -28,17 +29,17 @@ const Navbar = () => {
               <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300  dark:text-white ">Home</a> {/* Added hover effect */}
               {/* Dropdown 1 */}
               <div className="relative">
-                <button onClick={() => toggleDropdown('dropdown1')} className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Dropdown 1</button> {/* Added hover effect */}
+                <button onClick={() => toggleDropdown('dropdown1')} className="py-4 px-2 dark:text-white  text-gray-500 font-semibold hover:text-blue-500 transition duration-300"> Community Section </button> {/* Added hover effect */}
                 {isDropdownOpen.dropdown1 && (
-                  <div className="absolute bg-white shadow-lg py-3"> {/* Increased shadow size */}
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-300   ">Link 1</a> {/* Added transition */}
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-300">Link 2</a> {/* Added transition */}
+                  <div className="absolute bg-white  dark:text-white shadow-lg py-3"> {/* Increased shadow size */}
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-300 dark:text-white  "> </a> {/* Added transition */}
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-300 dark:text-white ">Link 2</a> {/* Added transition */}
                   </div>
                 )}
               </div>
               {/* Dropdown 2 */}
               <div className="relative">
-                <button onClick={() => toggleDropdown('dropdown2')} className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Dropdown 2</button> {/* Added hover effect */}
+                <button onClick={() => toggleDropdown('dropdown2')} className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"></button> {/* Added hover effect */}
                 {isDropdownOpen.dropdown2 && (
                   <div className="absolute bg-white shadow-lg py-3"> {/* Increased shadow size */}
                     <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-300">Link 3</a> {/* Added transition */}
@@ -46,8 +47,8 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a> {/* Added hover effect */}
-              <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a> {/* Added hover effect */}
+              <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300 dark:text-white  ">About</a> {/* Added hover effect */}
+              <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300 dark:text-white  ">Contact</a> {/* Added hover effect */}
             </ul>
           </div>
           {/* Secondary Navbar items */}
@@ -56,7 +57,9 @@ const Navbar = () => {
             <a href="" className="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Sign Up</a>
           </div>
           {/* add dark  mode */}
-          <Darkmode/>
+          <div className='py-4' >
+          {/* <Darkmode/> */}
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">

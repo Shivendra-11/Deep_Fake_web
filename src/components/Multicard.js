@@ -18,8 +18,9 @@ const Multicard = () => {
 
 
         <>
-<div className='py-16 bg-gray-300 ' >
-<h1 className="text-2xl  font-bold text-center text-blue-600 dark:text-blue-300 mt-8 mb-4">
+<div className='py-16 bg-gray-200 ' >
+<h1 className="text-2xl  font-bold text-center text-blue-500 smt-8 mb-4">
+    
   Check for AI in the images below or upload your own to find out!
 </h1>
 
